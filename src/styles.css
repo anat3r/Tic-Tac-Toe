@@ -1,0 +1,162 @@
+:root{
+  font-size: 24px;
+  color-scheme: dark;
+  --color-neutrals-white: #fff;
+  --color-gray-800: #312e2b;
+  --color-transparent-black-20: rgba(0, 0, 0, .2);
+  --color-transparent-white-8: hsla(0,0%,100%,.08);
+  --color-transparent-white-10: hsla(0,0%,100%,.1);
+  --color-transparent-white-14: hsla(0,0%,100%,.14);
+  --color-transparent-white-25: hsla(0,0%,100%,.25);
+  --color-transparent-white-40: hsla(0,0%,100%,.4);
+  --color-transparent-white-50: hsla(0,0%,100%,.5);
+  --color-transparent-white-65: hsla(0,0%,100%,.65);
+  --color-transparent-white-72: hsla(0,0%,100%,.72);
+  --color-transparent-white-85: hsla(0,0%,100%,.85);
+  --color-transparent-white-95: hsla(0,0%,100%,.95);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 20px;
+  padding: 0;
+  width: 100%;
+  height: 100;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 22px;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+h3 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+h4 {
+  margin-top: 0;
+  font-size: 16px;
+}
+
+h5 {
+  margin-top: 0;
+  font-size: 14px;
+}
+
+h6 {
+  margin-top: 0;
+  font-size: 12px;
+}
+
+code {
+  font-size: 1.2em;
+}
+
+ul {
+  padding-inline-start: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.square {
+  background: green;
+  border: 0.1em solid darkgreen;
+  color: white;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2em;
+  height: 2em;
+  margin-right: -0.1em;
+  margin-top: -0.1em;
+  padding: 0;
+  text-align: center;
+  width: 2em;
+}
+.board-row{
+  display: flex;
+}
+.board-row:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+.status {
+  padding: 0.3em 0.3em;
+  border-radius: 0.6em;
+  background-color: var(--color-neutrals-white);
+  color: #312e2b;
+  font-weight: 500;
+}
+.game {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.game-info {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  border-radius: 1rem;
+  background-color: var(--color-transparent-black-20);
+  gap: 1em;
+  flex-grow: 0;
+}
+.game-info > ol{
+  padding-left: inherit;
+  overflow: auto;
+}
+.game-info > ol li{
+  margin: 0 0.2em;
+}
+.moveButton{
+  background-color: inherit;
+  border: 0;
+  color: inherit;
+  padding: 0.2em 0;
+  font-size: 0.8rem;
+}
+.moveButton:hover {
+  cursor: pointer;
+    color: var(--color-transparent-white-95);
+}
+.win{
+  background-color: darkred;
+}
+.game-root{
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-gray-800);
+  height: 100vh;
+  width: 100vw;
+  color: var(--color-transparent-white-72);
+}
+.game-board{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: center;
+}
