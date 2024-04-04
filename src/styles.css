@@ -25,7 +25,6 @@ body {
   margin: 20px;
   padding: 0;
   width: 100%;
-  height: 100;
 }
 
 h1 {
@@ -108,10 +107,12 @@ body {
   font-weight: 500;
 }
 .game {
+  align-items: center;
+  justify-content: center;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .game-info {
@@ -145,13 +146,21 @@ body {
   background-color: darkred;
 }
 .game-root{
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
   background-color: var(--color-gray-800);
   height: 100vh;
   width: 100%;
   color: var(--color-transparent-white-72);
+}
+@media screen and (max-width: 700px) {
+  .game-root {
+    flex-direction: column;
+  }
 }
 .game-board{
   display: flex;
