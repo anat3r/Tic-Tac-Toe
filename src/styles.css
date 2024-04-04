@@ -145,7 +145,6 @@ body {
   background-color: darkred;
 }
 .game-root{
-  padding: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
