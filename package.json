@@ -2,7 +2,7 @@
   "name": "react.dev",
   "version": "0.0.0",
   "main": "/src/index.js",
-  "homepage": "https://anat3r.github.io/TIc-Tac-Toe-Dev/",
+  "homepage": "https://anat3r.github.io/Tic-Tac-Toe-Dev/",
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
